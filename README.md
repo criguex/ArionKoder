@@ -1,38 +1,38 @@
-# **PRUEBA TÉCNICA PARA ARIONKODER**
+# **TECHNICAL TEST FOR ARIONKODER**
 
-## Introducción 📖
-Automatización desarrollada para cumplir con el desafío técnico de ArionKoder.  
-La automatización se realizó para validar el flujo de inicio de sesión en una aplicación web.
+## Introduction 📖
+Automation developed to fulfill the technical challenge for ArionKoder.  
+This automation is designed to validate the login flow of a web application.
 
-El proyecto se encuentra en el directorio `sele_guer`.
+The project is located inside the `sele_guer` directory.
 
-## Prerrequisitos 📋
-- Java versión 17 y JDK.
-- IntelliJ IDEA o Eclipse IDE.
+## Prerequisites 📋
+- Java 17 and JDK.
+- IntelliJ IDEA or Eclipse IDE.
 - Maven.
 - Cucumber.
 
-## Instalación 🛠️🔩
-1. Clona el repositorio o descomprime el archivo del proyecto.
-2. Importa el proyecto en IntelliJ IDEA o Eclipse.
-3. Configura el JDK de Java y las variables de entorno necesarias.
-4. Configura Maven para la gestión de dependencias.
-5. Instala el plugin de Cucumber para Java en tu IDE.
+## Installation 🛠️🔩
+1. Clone the repository or extract the project folder.
+2. Import the project into IntelliJ IDEA or Eclipse.
+3. Set up the Java JDK and the required environment variables.
+4. Configure Maven for dependency management.
+5. Install the Cucumber for Java plugin in your IDE.
 
-## Ejecución del Proyecto 🚧⚒️
-1. Navega al paquete `sele_guer/src/test/java/runners`.
-2. Ejecuta las pruebas desde las clases de Runner para ejecutar los escenarios definidos en los archivos `.feature`.
+## Project Execution 🚧⚒️
+1. Navigate to the package `sele_guer/src/test/java/runners`.
+2. Run the tests using the Runner classes to execute the scenarios defined in the `.feature` files.
 
-## Navegadores Compatibles 🌐
-La automatización actualmente es compatible con los siguientes navegadores:
-- Google Chrome versión 123 o superior.
+## Supported Browsers 🌐
+This automation currently supports the following browsers:
+- Google Chrome version 123 or higher.
 
-## Detalles Generales de Implementación 💻
-Los escenarios de prueba están definidos en archivos `.feature` utilizando el lenguaje Gherkin.  
-Estos escenarios están conectados con métodos en las clases de StepDefinitions mediante las anotaciones `@Given`, `@When` y `@Then`.  
-Las clases de StepDefinitions interactúan con las clases de páginas (`pages`) para realizar acciones y validaciones en la interfaz de usuario.
+## General Implementation Details 💻
+Test scenarios are defined in `.feature` files using Gherkin language.  
+These scenarios are linked to methods in the StepDefinitions classes using `@Given`, `@When`, and `@Then` annotations.  
+The StepDefinitions classes interact with page classes (`pages`) to perform actions and validations on the user interface.
 
-   ```bash
+```bash
 📦ArionKoder
 ┗ 📂sele_guer
    ┣ 📂src
@@ -42,7 +42,6 @@ Las clases de StepDefinitions interactúan con las clases de páginas (`pages`) 
    ┃ ┃ ┃   ┣ 📂drivers            # WebDriver configuration and setup (e.g., ChromeDriver)
    ┃ ┃ ┃   ┣ 📂hooks              # Cucumber hooks (e.g., Before/After actions)
    ┃ ┃ ┃   ┣ 📂locators           # Centralized element locators used in pages
-   ┃ ┃ ┃ 
    ┃ ┃ ┃   ┣ 📂pages              # Page Object Model classes for each screen/page
    ┃ ┃ ┃   ┣ 📂test_data          # Static data used for test execution
    ┃ ┃ ┃   ┗ 📂utils              # Utility/helper classes for general reusable methods
@@ -63,29 +62,31 @@ Las clases de StepDefinitions interactúan con las clases de páginas (`pages`) 
    ┗ 📜README.md                # Project documentation
 
 ```
-## Recomendaciones 🛠️
-1. **Estructura del Proyecto**: Mantén una estructura de paquetes clara y modular. Asegúrate de que cada paquete tenga una responsabilidad específica:
-   - **`pages`**: Para mapear elementos de la interfaz de usuario.
-   - **`stepdefinitions`**: Para definir los pasos de los escenarios de prueba.
-   - **`hooks`**: Para configuraciones previas o posteriores a los escenarios.
-   - **`test_data`**: Para almacenar datos de prueba reutilizables.
-   - **`utils`**: Para funcionalidades comunes.
+## Recommendations 🛠️
+Project Structure: Keep a clear and modular package structure. Ensure each package has a specific responsibility:
 
-2. **Nombres de Clases y Métodos**: Usa nombres descriptivos y consistentes para facilitar la comprensión del código.
+pages: To map UI elements.
 
-3. **Gestión de Dependencias**: Mantén actualizado el archivo `pom.xml` con las versiones más recientes de las dependencias utilizadas.
+stepdefinitions: To define scenario steps.
 
-4. **Pruebas en Navegadores**: Asegúrate de que las pruebas sean compatibles con las versiones más recientes de los navegadores soportados.
+hooks: For setup or teardown configuration.
 
-5. **Documentación**: Mantén el archivo `README.md` actualizado con instrucciones claras para la instalación, configuración y ejecución del proyecto.
+test_data: To store reusable test data.
 
-6. **Control de Versiones**: Usa ramas para trabajar en nuevas funcionalidades o correcciones y realiza revisiones de código antes de fusionar cambios.
+utils: For shared/common functionalities.
 
----
+Class and Method Naming: Use descriptive and consistent names to improve code readability.
 
-## Autor ✒️👨🏻‍💻
-**©️ Cristian Guerra Gómez** - *Creación del Proyecto.* - [criguex@gmail.com](#criguex)
+Dependency Management: Keep your pom.xml up to date with the latest versions of used dependencies.
 
+Browser Compatibility: Ensure your tests are compatible with the latest versions of supported browsers.
+
+Documentation: Keep the README.md file updated with clear instructions for installation, setup, and execution.
+
+Version Control: Use branches for new features or fixes and always perform code reviews before merging.
+
+## Author ✒️👨🏻‍💻
+## ©️ Cristian Guerra Gómez – Project Creator – criguex@gmail.com
 
 
 
