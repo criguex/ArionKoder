@@ -33,27 +33,35 @@ Estos escenarios están conectados con métodos en las clases de StepDefinitions
 Las clases de StepDefinitions interactúan con las clases de páginas (`pages`) para realizar acciones y validaciones en la interfaz de usuario.
 
    ```bash
- ArionKoder/
-├── src/
-│   ├── main/
-│   │   └── java/
-│   │       └── arionkoder/
-│   │           ├── exceptions/       # Excepciones personalizadas.
-│   │           ├── questions/        # Clases para construir modelos de datos o validaciones.
-│   │           ├── tasks/            # Clases para realizar acciones de alto nivel.
-│   │           ├── userinterfaces/   # Clases que mapean elementos de la interfaz de usuario.
-│   │           └── utils/            # Funcionalidades comunes.
-│   └── test/
-│       └── java/
-│           └── arionkoder/
-│               ├── stepdefinitions/  # Definiciones de pasos de Cucumber.
-│               │   └── login/        # Pasos específicos para el flujo de login.
-│               ├── runners/          # Clases para ejecutar los escenarios.
-│               └── test_data/        # Datos de prueba.
-│       └── resources/
-│           └── features/             # Archivos .feature con los escenarios de prueba.
-├── pom.xml
-└── README.md
+📦ArionKoder
+┗ 📂sele_guer
+   ┣ 📂src
+   ┃ ┣ 📂main
+   ┃ ┃ ┣ 📂java
+   ┃ ┃ ┃ ┗ 📦[package](sele_guer)
+   ┃ ┃ ┃   ┣ 📂drivers            # WebDriver configuration and setup (e.g., ChromeDriver)
+   ┃ ┃ ┃   ┣ 📂hooks              # Cucumber hooks (e.g., Before/After actions)
+   ┃ ┃ ┃   ┣ 📂locators           # Centralized element locators used in pages
+   ┃ ┃ ┃   ┣ 📂org                # (Optional) For organization-specific packages or configs
+   ┃ ┃ ┃   ┣ 📂pages              # Page Object Model classes for each screen/page
+   ┃ ┃ ┃   ┣ 📂test_data          # Static data used for test execution
+   ┃ ┃ ┃   ┗ 📂utils              # Utility/helper classes for general reusable methods
+   ┃ ┃ ┗ 📂resources              # Resources (if needed for runtime configs, e.g., properties)
+   ┃ ┣ 📂test
+   ┃ ┃ ┣ 📂java
+   ┃ ┃ ┃ ┗ 📦[package](sele_guer)
+   ┃ ┃ ┃   ┣ 📂runners            # Test runner classes to trigger feature execution
+   ┃ ┃ ┃   ┗ 📂stepdefinitions    # Step definitions matching .feature steps with Java code
+   ┃ ┃ ┗ 📂resources
+   ┃ ┃   ┗ 📂Features            # .feature files defining scenarios in Gherkin syntax
+   ┃ ┃       ┣ 📜FlowShoppingCart.feature # Test for shopping cart workflow
+   ┃ ┃       ┣ 📜Login.feature             # Login functionality test scenarios
+   ┃ ┃       ┗ 📜Register.feature          # Register functionality test scenarios
+   ┣ 📂target                     # Maven build output (compiled classes, reports, etc.)
+   ┣ 📜.gitignore                # Git ignored files configuration
+   ┣ 📜pom.xml                  # Maven project descriptor (dependencies and plugins)
+   ┗ 📜README.md                # Project documentation
+
 ```
 ## Recomendaciones 🛠️
 1. **Estructura del Proyecto**: Mantén una estructura de paquetes clara y modular. Asegúrate de que cada paquete tenga una responsabilidad específica:
