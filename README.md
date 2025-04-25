@@ -20,7 +20,7 @@ El proyecto se encuentra en el directorio `sele_guer`.
 5. Instala el plugin de Cucumber para Java en tu IDE.
 
 ## Ejecución del Proyecto 🚧⚒️
-1. Navega al paquete `sele_guer/src/test/java/stepdefinitions/login`.
+1. Navega al paquete `sele_guer/src/test/java/runners`.
 2. Ejecuta las pruebas desde las clases de Runner para ejecutar los escenarios definidos en los archivos `.feature`.
 
 ## Navegadores Compatibles 🌐
