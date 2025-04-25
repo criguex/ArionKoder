@@ -42,7 +42,7 @@ Las clases de StepDefinitions interactúan con las clases de páginas (`pages`) 
    ┃ ┃ ┃   ┣ 📂drivers            # WebDriver configuration and setup (e.g., ChromeDriver)
    ┃ ┃ ┃   ┣ 📂hooks              # Cucumber hooks (e.g., Before/After actions)
    ┃ ┃ ┃   ┣ 📂locators           # Centralized element locators used in pages
-   ┃ ┃ ┃   ┣ 📂org                # (Optional) For organization-specific packages or configs
+   ┃ ┃ ┃ 
    ┃ ┃ ┃   ┣ 📂pages              # Page Object Model classes for each screen/page
    ┃ ┃ ┃   ┣ 📂test_data          # Static data used for test execution
    ┃ ┃ ┃   ┗ 📂utils              # Utility/helper classes for general reusable methods
