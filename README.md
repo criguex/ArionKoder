@@ -65,7 +65,7 @@ The StepDefinitions classes interact with page classes (`pages`) to perform acti
 
 ## Manual escenarios 🛠️💻
 Scenarios created for manual testing on the ShopSmart website.   
-**©️ - [MANUAL TEST CASES](https://docs.google.com/spreadsheets/d/1nYUdLsUCL9tgzyinOmcp3_ymjVuv-l22/edit?usp=sharing&ouid=108580779617386278152&rtpof=true&sd=true)]
+ [MANUAL TEST CASES](https://docs.google.com/spreadsheets/d/1nYUdLsUCL9tgzyinOmcp3_ymjVuv-l22/edit?usp=sharing&ouid=108580779617386278152&rtpof=true&sd=true)]
 ## Recommendations 🛠️
 Project Structure: Keep a clear and modular package structure. Ensure each package has a specific responsibility:
 
