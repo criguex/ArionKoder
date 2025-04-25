@@ -54,8 +54,7 @@ Las clases de StepDefinitions interactúan con las clases de páginas (`pages`) 
 │           └── features/             # Archivos .feature con los escenarios de prueba.
 ├── pom.xml
 └── README.md
-
-
+```
 ## Recomendaciones 🛠️
 1. **Estructura del Proyecto**: Mantén una estructura de paquetes clara y modular. Asegúrate de que cada paquete tenga una responsabilidad específica:
    - **`pages`**: Para mapear elementos de la interfaz de usuario.
@@ -78,3 +77,8 @@ Las clases de StepDefinitions interactúan con las clases de páginas (`pages`) 
 
 ## Autor ✒️👨🏻‍💻
 **©️ Cristian Guerra Gómez** - *Creación del Proyecto.* - [criguex@gmail.com](#criguex)
+
+
+
+
+
