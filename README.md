@@ -62,6 +62,10 @@ The StepDefinitions classes interact with page classes (`pages`) to perform acti
    ┗ 📜README.md                # Project documentation
 
 ```
+
+## Manual escenarios 🛠️💻
+Scenarios created for manual testing on the ShopSmart website.   
+**©️ Cristian Guerra Gómez** - *Project Creation.* - [[criguex@gmail.com](https://docs.google.com/spreadsheets/d/1nYUdLsUCL9tgzyinOmcp3_ymjVuv-l22/edit?usp=sharing&ouid=108580779617386278152&rtpof=true&sd=true)](#criguex)
 ## Recommendations 🛠️
 Project Structure: Keep a clear and modular package structure. Ensure each package has a specific responsibility:
 
