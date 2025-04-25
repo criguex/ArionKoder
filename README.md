@@ -21,7 +21,7 @@ El proyecto se encuentra en el directorio `sele_guer`.
 
 ## Ejecución del Proyecto 🚧⚒️
 1. Navega al paquete `sele_guer/src/test/java/stepdefinitions/login`.
-2. Ejecuta las pruebas desde las clases de StepDefinitions o configura un Runner para ejecutar los escenarios definidos en los archivos `.feature`.
+2. Ejecuta las pruebas desde las clases de Runner para ejecutar los escenarios definidos en los archivos `.feature`.
 
 ## Navegadores Compatibles 🌐
 La automatización actualmente es compatible con los siguientes navegadores:
