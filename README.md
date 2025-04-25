@@ -54,3 +54,27 @@ Las clases de StepDefinitions interactúan con las clases de páginas (`pages`) 
 │           └── features/             # Archivos .feature con los escenarios de prueba.
 ├── pom.xml
 └── README.md
+
+
+## Recomendaciones 🛠️
+1. **Estructura del Proyecto**: Mantén una estructura de paquetes clara y modular. Asegúrate de que cada paquete tenga una responsabilidad específica:
+   - **`pages`**: Para mapear elementos de la interfaz de usuario.
+   - **`stepdefinitions`**: Para definir los pasos de los escenarios de prueba.
+   - **`hooks`**: Para configuraciones previas o posteriores a los escenarios.
+   - **`test_data`**: Para almacenar datos de prueba reutilizables.
+   - **`utils`**: Para funcionalidades comunes.
+
+2. **Nombres de Clases y Métodos**: Usa nombres descriptivos y consistentes para facilitar la comprensión del código.
+
+3. **Gestión de Dependencias**: Mantén actualizado el archivo `pom.xml` con las versiones más recientes de las dependencias utilizadas.
+
+4. **Pruebas en Navegadores**: Asegúrate de que las pruebas sean compatibles con las versiones más recientes de los navegadores soportados.
+
+5. **Documentación**: Mantén el archivo `README.md` actualizado con instrucciones claras para la instalación, configuración y ejecución del proyecto.
+
+6. **Control de Versiones**: Usa ramas para trabajar en nuevas funcionalidades o correcciones y realiza revisiones de código antes de fusionar cambios.
+
+---
+
+## Autor ✒️👨🏻‍💻
+**©️ Cristian Guerra Gómez** - *Creación del Proyecto.* - [criguex@gmail.com](#criguex)
