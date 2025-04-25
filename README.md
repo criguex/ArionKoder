@@ -1,82 +1,56 @@
-```markdown
-# Proyecto: ArionKoder
+# **PRUEBA TÉCNICA PARA ARIONKODER**
 
-Este proyecto es una automatización de pruebas utilizando **Java**, **Maven** y **Cucumber**. Está diseñado para validar funcionalidades de una aplicación web, específicamente el flujo de inicio de sesión.
+## Introducción 📖
+Automatización desarrollada para cumplir con el desafío técnico de ArionKoder.  
+La automatización se realizó para validar el flujo de inicio de sesión en una aplicación web.
 
-## Tecnologías utilizadas
+El proyecto se encuentra en el directorio `sele_guer`.
 
-- **Java**: Lenguaje de programación principal.
-- **Maven**: Herramienta de gestión de dependencias y construcción del proyecto.
-- **Cucumber**: Framework para pruebas basadas en comportamiento (BDD).
-- **Selenium WebDriver**: Para la interacción con el navegador.
+## Prerrequisitos 📋
+- Java versión 17 y JDK.
+- IntelliJ IDEA o Eclipse IDE.
+- Maven.
+- Cucumber.
 
-## Estructura del proyecto
+## Instalación 🛠️🔩
+1. Clona el repositorio o descomprime el archivo del proyecto.
+2. Importa el proyecto en IntelliJ IDEA o Eclipse.
+3. Configura el JDK de Java y las variables de entorno necesarias.
+4. Configura Maven para la gestión de dependencias.
+5. Instala el plugin de Cucumber para Java en tu IDE.
 
-El proyecto sigue una estructura estándar de Maven:
+## Ejecución del Proyecto 🚧⚒️
+1. Navega al paquete `sele_guer/src/test/java/stepdefinitions/login`.
+2. Ejecuta las pruebas desde las clases de StepDefinitions o configura un Runner para ejecutar los escenarios definidos en los archivos `.feature`.
 
-```
-ArionKoder/
-sele_guer
+## Navegadores Compatibles 🌐
+La automatización actualmente es compatible con los siguientes navegadores:
+- Google Chrome versión 123 o superior.
+
+## Detalles Generales de Implementación 💻
+Los escenarios de prueba están definidos en archivos `.feature` utilizando el lenguaje Gherkin.  
+Estos escenarios están conectados con métodos en las clases de StepDefinitions mediante las anotaciones `@Given`, `@When` y `@Then`.  
+Las clases de StepDefinitions interactúan con las clases de páginas (`pages`) para realizar acciones y validaciones en la interfaz de usuario.
+
+   ```bash
+ ArionKoder/
 ├── src/
 │   ├── main/
 │   │   └── java/
+│   │       └── arionkoder/
+│   │           ├── exceptions/       # Excepciones personalizadas.
+│   │           ├── questions/        # Clases para construir modelos de datos o validaciones.
+│   │           ├── tasks/            # Clases para realizar acciones de alto nivel.
+│   │           ├── userinterfaces/   # Clases que mapean elementos de la interfaz de usuario.
+│   │           └── utils/            # Funcionalidades comunes.
 │   └── test/
 │       └── java/
-│           ├── stepdefinitions/
-│           │   └── login/
-│           │       └── StepDefinitionsLogin.java
-│           ├── pages/
-│           ├── hooks/
-│           └── test_data/
+│           └── arionkoder/
+│               ├── stepdefinitions/  # Definiciones de pasos de Cucumber.
+│               │   └── login/        # Pasos específicos para el flujo de login.
+│               ├── runners/          # Clases para ejecutar los escenarios.
+│               └── test_data/        # Datos de prueba.
+│       └── resources/
+│           └── features/             # Archivos .feature con los escenarios de prueba.
 ├── pom.xml
-```
-
-### Descripción de carpetas principales
-
-- **stepdefinitions**: Contiene las definiciones de los pasos de Cucumber.
-- **pages**: Contiene las clases que representan las páginas de la aplicación web.
-- **hooks**: Contiene configuraciones y métodos que se ejecutan antes o después de los escenarios.
-- **test_data**: Contiene datos de prueba utilizados en los escenarios.
-
-## Configuración del proyecto
-
-1. Clona este repositorio en tu máquina local.
-2. Asegúrate de tener **Java 8+** y **Maven** instalados.
-3. Ejecuta el siguiente comando para descargar las dependencias:
-
-   ```bash
-   mvn clean install
-   ```
-
-## Ejecución de las pruebas
-
-Para ejecutar las pruebas, utiliza el siguiente comando:
-
-```bash
-mvn test
-```
-
-## Flujo de prueba implementado
-
-### Escenario: Inicio de sesión exitoso
-
-1. El usuario navega a la página de inicio de sesión.
-2. Ingresa sus credenciales válidas.
-3. Se verifica que el usuario sea redirigido a su perfil y página principal.
-
-## Contribuciones
-
-Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
-
-1. Haz un fork del repositorio.
-2. Crea una nueva rama para tus cambios: `git checkout -b feature/nueva-funcionalidad`.
-3. Realiza tus cambios y haz un commit: `git commit -m "Agrega nueva funcionalidad"`.
-4. Envía tus cambios al repositorio remoto: `git push origin feature/nueva-funcionalidad`.
-5. Abre un Pull Request.
-
-## Licencia
-
-Este proyecto está bajo la licencia **MIT**. Consulta el archivo `LICENSE` para más detalles.
-```
-
-Este archivo proporciona una descripción clara del proyecto, su estructura y cómo ejecutarlo. Puedes personalizarlo según sea necesario.
+└── README.md
